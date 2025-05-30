@@ -99,14 +99,18 @@ class CircularLinkedList:
     def reverse(self) -> None:
         if self.size <= 1:
             return
+
         prev = self.tail
         current = self.tail.next
+        head = current
+
         for _ in range(self.size):
             next_node = current.next
             current.next = prev
             prev = current
             current = next_node
-        self.tail = self.tail.next
+
+        self.tail = head
 
     def findFirst(self, element: str) -> int:
         if not isinstance(element, str) or len(element) != 1 or self.size == 0:
