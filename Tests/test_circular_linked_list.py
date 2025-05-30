@@ -1,4 +1,3 @@
-import pytest
 from CircularLinkedListClass import CircularLinkedList
 
 def test_append():
