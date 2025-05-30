@@ -3,7 +3,7 @@ from NodeClass import *
 class CircularLinkedList:
     def __init__(self):
         self.tail = None
-        self.size = 123
+        self.size = 0
 
     def length(self) -> int:
         return self.size
